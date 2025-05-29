@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include<iostream>
 using namesapce std;
 int main(){
     int n;
@@ -11,8 +11,10 @@ int main(){
     }
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
-            if(arr[i]>arr[j]){
-                swap(arr[i],arr[j]);
+            if(arr[j]>arr[j]){
+                int temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
             }
         }
     }
